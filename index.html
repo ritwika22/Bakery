@@ -10,6 +10,7 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,7 +43,7 @@
     </div>
 
     <section class="body">
-        <div class="art-content">
+        <div class="art-content" data-aos="zoom-in-up">
             <div class="art-box">
                 <h3>Art of cakes</h3>
                 <span>WE CREATE DELICIOUS MEMORIES</span>
@@ -62,6 +63,7 @@
             <!-- <img src="images/LOGO 2.png" height="200px" class="taste-logo" alt=""> -->
             <div class="pic-box">
                 <img src="images/LOGO 2.png" height="200px" class="taste-logo" alt="">
+                <p class="taste-para">TASTES SO GOOD!</p>
                 <!-- <img src="images/LOGO 2.png" height="200px" alt=""> -->
                 <div class="top-pic-box">
                     <div class="pic1"></div>
@@ -88,7 +90,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias nisi officiis nobis?
                         Earum quasi qui ex quidem facilis impedit delectus debitis natus, cum at ab eveniet ipsum ea
                         facere.</p>
-                    <div class="swiper">
+                    <div class="swiper cake-swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -110,7 +112,7 @@
                             <div class="swiper-slide">
                                 <img src="images/pancake 6.jpg" alt="">
                             </div>
-                            
+
                         </div>
 
                         <!-- If we need navigation buttons -->
@@ -123,12 +125,123 @@
         </div>
 
         <div class="dashboard-sec">
-            <div class="dashboard-write"></div>
-            <div class="dashboard-img"></div>
+            <div class="dashboard-write">
+                <h3>Breakfast</h3>
+                <p>7AM BREAKFAST? WE'RE OPEN!</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <h4>Full Breakfast</h4>
+                        <p>Duis ut tortor, et risus, vulputate pretium</p>
+                        <span>$12.49</span>
+                    </li>
+                    <li>
+                        <h4>Toast & Jam</h4>
+                        <p>Suspendisse, tempus, nterdum</p>
+                        <span>$4.90</span>
+                    </li>
+                    <li>
+                        <h4>Muffins</h4>
+                        <p>Fusce eget dui sodales est</p>
+                        <span>$3.95</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-item-two">
+                <div class="dashboard-img">
+                    <!-- <img src="images/photo bg.png" alt=""> -->
+                    <div class="img-write">
+                        <div class="dash-flex">
+                            <p class="est">EST.</p>
+                            <p class="est-year">1893</p>
+                        </div>
+                        <img src="images/design.png" alt="">
+                        <h3>Your morning Escape with Flair</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quod error culpa quam
+                            commodi at deleniti facere necessitatibus, nostrum totam. Eum nisi quasi, alias nemo
+                            laudantium amet dolor officiis sint.</p>
+                        <a href="#">READ</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer>
+            <div class="footer-head">
+                <h3>The Jibarito Sandwich</h3>
+                <p>THE BEST SANDWICH YOU'VE EVER TASTED!</p>
+            </div>
+            <div class="foot-flex">
+                <div class="swiper-sandwich-parent">
+                    <div class="swiper sandwich-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="images/wheat.jpg" alt="">
+                                <h3>Class aptent</h3>
+                                <p>Quot allenum persecuti ut eam, nam ad atql primis nusquam.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/egg.jpg" alt="">
+                                <h3>Nulla eget</h3>
+                                <p>Nullam dictum fells eu pede mollis pretium integer tincidunt.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/paneer.jpg" alt="">
+                                <h3>Sed nibh purus</h3>
+                                <p>Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+                            </div>
+
+
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev round"></div>
+                        <div class="swiper-button-next round"></div>
+
+                    </div>
+                </div>
+
+                <div class="sandwich-img-parent">
+                    <div class="foot-img-box" id="bgchange">
+                        <div class="right-img-box">
+                            <div class="first-box" onclick="clickprep()">
+                                <p>PREP</p>
+                                <h3>15</h3>
+                                <span>mins</span>
+                            </div>
+                            <div class="second-box" onclick="clickcook()">
+                                <p>COOK</p>
+                                <h3>35</h3>
+                                <span>mins</span>
+                            </div>
+                            <div class="third-box" onclick="clickready()">
+                                <p>READY IN</p>
+                                <h3>50</h3>
+                                <span>mins</span>
+                            </div>
+                        </div>
+                        <a href="" class="recipe">FULL RECIPE</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="foot-nav">
+                <li><a href="#">OUR MENU</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CULTURE</a></li>
+                <li class="logo-two"><a href="#">gustoso</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CATERING</a></li>
+                <li><a href="#">VISIT US</a></li>
+            </ul>
+        </footer>
 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 
