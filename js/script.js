@@ -96,3 +96,28 @@ function clickready() {
   var r = document.querySelector(':root');
   r.style.setProperty('--bgchange-image', 'url(../images/sandwich1.jpg)');
 }
+
+
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+        "body").style.visibility = "hidden";
+      document.querySelector(
+        "#loader").style.visibility = "visible";
+  } else {
+      document.querySelector(
+        "#loader").style.display = "none";
+      document.querySelector(
+        "body").style.visibility = "visible";
+  }
+};
+
+
+function openNav() {
+  document.getElementById("responsive-side").style.width = "100%";
+  // document.getElementById("responsive-side").style.height = "100%";
+}
+function closeNavibar() {
+  document.getElementById("responsive-side").style.width = "0%";
+  // document.getElementById("responsive-side").style.height = "0%";
+}
